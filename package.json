@@ -9,11 +9,12 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview --port 5000",
     "start": "vite preview --port $PORT",
-    "heroku-postbuild": "vite build"
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "vite": "^4.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
